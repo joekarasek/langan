@@ -1,56 +1,57 @@
 .about {
-  background-color: #EDE9E0;
+  background-color: #ffffff;
   .heading {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
     &__main {
-      color: #000000;
-      font-family: $ff-sanchez;
+      color: #2C2340;
+      font-family: $ff-raleway;
       margin-bottom: 0;
       line-height: 1;
     }
   }
 
   //main slab
-  &__doctor {
-    padding-top: 15px;
-    padding-bottom: 45px;
+  &__doctor-slab {
+    padding-top: 30px;
+    @media (min-width: 768px) {
+      background-image: url('/assets/langan-bio.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 20% center;
+      padding-bottom: 60px;
+    }
   }
-  .doctor {
-    &__wrapper {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      @media (max-width: 767px) {
-        flex-direction: column;
+    .doctor {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      @media (min-width: 768px) {
+        width: 50%;
       }
-    }
-    &__video {
-      width: 47.5%;
-      @media (max-width: 767px) {
+      @media (min-width: 992px) {
+        width: 60%;
+      }
+      &__wrapper {
+        display: flex;
+        justify-content: flex-end;
+      }
+      &__name {
+        @include h4();
+        color: #007c9f;
+        font-family: $ff-raleway;
+        font-weight: 700;
+      }
+      &__copy {
+        color: #1c1836;
+      }
+      &__mobile-image img {
         width: 100%;
-        margin-bottom: 30px;
+        @media (min-width: 768px) {
+          display: none;
+        }
       }
     }
-    &__text {
-      width: 47.5%;
-      @media (max-width: 767px) {
-        width: 100%;
-      }
-    }
-    &__name {
-      font-weight: 700;
-      margin-bottom: 5px;
-      line-height: 1;
-      @include font-size(36px, 32px, 24px, 24px, 20px);
-    }
-    &__byline {
-      margin-bottom: 30px;
-    }
-    &__copy {}
-  }
 
 
   //team slab
