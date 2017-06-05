@@ -1,13 +1,13 @@
 #section-insurance {
 
-  $c-no-insurance: #000000;
-  $c-sub-header: #ffffff;
-  $c-preventative: #000000;
+  $c-no-insurance: #0068A9;
+  $c-sub-header: #2C2340;
+  $c-preventative: #2C2340;
   $c-copy: #000000;
   $c-mobile-bg: white;
 
   padding-top: 50px;
-  background-image: url('/assets/no-insurance_bkgd.jpg');
+  background-image: url('/assets/insurance-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -20,10 +20,10 @@
   }
 
   .title {
-    font-family: $ff-sanchez;
+    font-family: $ff-raleway;
     text-transform: uppercase;
-    font-weight: 400;
-    @include font-size(50px, 44px, 40px, 38px, 32px);
+    font-weight: 900;
+    @include font-size(77px, 57px, 48px, 43px, 32px);
     @media (width: 768px) {
       font-size: 40px;
     }
@@ -32,33 +32,31 @@
     color: $c-no-insurance;
   }
   .sub-title {
-    background-color: #008CBA;
-    @include font-size(24px,
-                       22px,
-                       20px,
-                       22px,
+    @include font-size(54px,
+                       44px,
+                       33px,
+                       32px,
                        22px);
     font-weight: 900;
     color: $c-sub-header;
     margin-bottom: 0;
     display: inline-block;
-    padding: 10px 30px;
-    letter-spacing: 3px;
+    font-family: $ff-dancing;
   }
   .care-text {
-    font-family: $ff-sanchez;
+    font-family: $ff-lato;
     font-weight: 400;
     line-height: 1;
     padding-top: 30px;
     color: $c-preventative;
-    @include font-size(27px, 25px, 22px, 27px, 20px);
+    @include font-size(44px, 34px, 28px, 27px, 20px);
   }
   .list-item {
     list-style: none;
     p {
       color: $c-copy;
       list-style: none;
-      @include font-size(21px, 19px, 14px, 19px, 14px);
+      @include font-size(25px, 19px, 14px, 18px, 14px);
       font-size: 21px;
       margin-bottom: 0;
       line-height: 1.2;

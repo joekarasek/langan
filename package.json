@@ -10,7 +10,6 @@
   },
   "scripts": {
     "precommit": "npm test",
-    "prepush": "npm test",
     "test": "gulp validate",
     "start": "gulp",
     "gulp": "gulp --tasks && gulp",

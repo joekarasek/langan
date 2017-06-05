@@ -34,20 +34,20 @@
         {% include 'molecules/cta__two-to-one.twig' with {
             id: 'id="cta-two"',
             existingPatients: false,
-            shadow: true
+            shadow: false
         } %}
 
         {% include 'organisms/reviews.twig' %}
 
         {% include 'organisms/reviews__link-n-video-modal.twig' %}
 
+        {% include 'organisms/insurance.twig' %}
+
         {% include 'molecules/cta__two-to-one.twig' with {
             id: 'id="cta-three"',
-            existingPatients: true,
-            shadow: true
+            existingPatients: false,
+            shadow: false
         } %}
-
-        {% include 'organisms/insurance.twig' %}
 
         {% include 'organisms/services.twig' %}
 
