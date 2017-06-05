@@ -35,10 +35,10 @@
   #primary-menu > ul {
     margin-right: 0;
     border-right: none;
-    @include nav-color(#000000);
-    //@include nav-color(#436972, 1, 400);
-    //@include nav-color(#9A9E61, 2, 400);
-    //@include nav-color(#56784F, 3, 400);
+    @include nav-color(#2C2340);
+    @include nav-color(#171774, 1, 700);
+    @include nav-color(#008C8F, 2, 700);
+    @include nav-color(#789F00, 3, 700);
   }
 
   #primary-menu-trigger {
@@ -99,11 +99,11 @@
 
   //when you scroll down
   #primary-menu ul {
-    padding-top: 20px;
+    padding-top: 25px;
   }
   &.sticky-header {
     #primary-menu ul {
-      padding-top: 0;
+      padding-top: 20px;
     }
   }
 
@@ -117,11 +117,11 @@
     }
   }
   :not(.static-sticky) #primary-menu ul > li > a {
-    text-decoration: underline;
     letter-spacing: 1px;
     font-size: 18px;
     padding: 15px 12px;
     font-family: $ff-lato;
+    font-weight: 700;
     text-transform: none;
     transition: padding .3s ease;
     &:hover {
@@ -163,12 +163,13 @@
 #header,
 #header-wrap,
 #logo {
-  height: 120px !important;
+  height: 110px !important;
   transition: height .4s ease, opacity .3s ease;
   @media (max-width: $width-md) {
   height: 100px !important;
   }
 }
+
 #logo img {
   height: 100px !important;
   transition: height .4s ease, opacity .3s ease;
@@ -176,7 +177,6 @@
     height: 85px !important;
   }
 }
-
 
 #header.sticky-header:not(.static-sticky),
 #header.sticky-header:not(.static-sticky) #header-wrap,
