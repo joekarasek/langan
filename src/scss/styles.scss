@@ -24,11 +24,12 @@
 .link-no-style:hover {
   text-decoration: none !important;
 }
+
 .bf-pro:hover {
   text-decoration: underline !important;
 }
 .mobile-break {
-  @media  screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     display: none;
   }
 }
