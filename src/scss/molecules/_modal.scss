@@ -1,0 +1,64 @@
+/// iPhone Form in Modal Fix
+/// @group fixes
+/// @example #requestAppointmentForm { @include iPhoneFormFix(); }
+@mixin iPhoneFormFix() {
+  input[type='text'],
+  input[type='email'],
+  input[type='phone'],
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/// Bootstrap 3 Modal Width Override - will override the default width of bootstrap's modal. Add .modal-wide to the bootstrap .modal in html (class="modal modal-wide")
+/// @group fixes
+/// @param {percentage} $width [90%] - Percentage of the width of the viewport you would like bootstrap's modal to be
+/// @example .modal { @include modal-width-override( 90% ); }
+@mixin modal-width-override($width: 80%) {
+  &.modal-wide .modal-dialog {
+    width: $width;
+  }
+  &.modal-wide .modal-body {
+    //overflow-y: auto;
+  }
+}
+
+#requestAppointmentForm {
+  @include iPhoneFormFix;
+}
+
+.modal-dialog {
+  h4, p, span { color: #000000 !important;}
+  img {
+    //max-height: 250px !important;
+  }
+}
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.modal-header {
+  button.close {
+    font-family: sans-serif;
+    font-size: 50px;
+    position: relative;
+    opacity: 0.8;
+    margin-top: -10px;
+  }
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: 700;
+  margin: 0;
+  margin-top: 15px;
+  line-height: 1;
+}
+
+.modal-image {
+  text-align: center;
+  padding-bottom: 10px;
+}

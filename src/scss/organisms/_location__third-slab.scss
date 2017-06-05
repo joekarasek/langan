@@ -1,0 +1,25 @@
+.location.location__third-slab {
+  padding-top: 20px;
+  @media  (min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .location__card--wrapper {
+      width: 50%;
+    }
+    .location__map {
+      width: 50%;
+      height: 100%;
+    }
+  }
+  @media  (min-width: 1200px) {
+    .location__card--wrapper {
+      width: 50%;
+    }
+    .location__map {
+      width: 50%;
+    }
+  }
+
+
+}

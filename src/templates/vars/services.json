@@ -1,0 +1,97 @@
+{
+  "services":[
+    {
+      "doubleWide": true,
+      "title": "Dental Implants",
+      "titleMobil": "Dental Implants",
+      "titleFull": "Implant Dentistry",
+      "image": "implants.jpg",
+      "modalTarget": "implants",
+      "text": ["Dental implants are a great option for replacing missing teeth, improving chewing ability, eliminating bridges, and replacing dentures.",
+        "Several implants may provide a base for a series of artificial teeth known as a fixed bridge. Implants can even be used to secure a full set of removable dentures for people who have no remaining natural teeth."]
+    },
+    {
+      "doubleWide": false,
+      "title": "Smile Whitening",
+      "titleMobil": "Whitening",
+      "titleFull": "Smile Whitening",
+      "image": "whitening.jpg",
+      "modalTarget": "smile",
+      "text": ["Many everyday things like coffee, tea and wine can significantly dull teeth. Smile-whitening enables us to significantly brighten your smile for that dazzling white smile you deserve.",
+        "Plastic whitening trays will be made from models of your teeth. You will then place a special whitening gel in each tray and wear the trays in your mouth for several hours per day. (Many patients wear their trays after dinner and before bed.) A significant change in tooth color is usually seen in just four to six weeks."]
+    },
+    {
+      "doubleWide": false,
+      "title": "Dentures",
+      "titleMobil": "Dentures",
+      "titleFull": "Dentures",
+      "image": "dentures.jpg",
+      "modalTarget": "dentures",
+      "text": ["A well made denture is not only comfortable and functions properly: it also allows the wearer to smile with confidence, knowing that their smile is no different than it would be with natural teeth. Creating a cosmetic denture is really an art in the hands of a skilled dentist like Dr. Piccolo."]
+    },
+    {
+      "doubleWide": false,
+      "title": "Sleep Apnea Treatment",
+      "titleMobil": "Apnea",
+      "titleFull": "Sleep Apnea Treatment",
+      "image": "apnea.jpg",
+      "modalTarget": "apnea",
+      "text": ["Obstructive sleep apnea occurs when the airway completely collapses, blocking airflow into the lungs. The harder one tries to breathe, the tighter the airway seals. This airway obstruction persists until the brain partially awakens the person, unconsciously closing the jaw and returning the tongue and throat to a normal position.",
+      "We offer effective, nonsurgical relief from sleep apnea and other sleep-related disorders—including snoring. Ask us how you can get the restful, healthy sleep you’ve been missing."]
+    },
+    {
+      "doubleWide": false,
+      "title": "Invisalign® Orthodontics",
+      "titleMobil": "Invisalign®",
+      "titleFull": "Invisalign® Orthodontics",
+      "image": "invisalign.jpg",
+      "modalTarget": "invisalign",
+      "text": ["These “invisible” aligners are the latest in orthodontic technology for adults and teens. Straight teeth and a revitalized smile no longer need to come from a mouth full of unattractive wire and bracket braces. Enhancing self-esteem and physical confidence, invisible braces offer an esthetic and barely visible alternative to conventional wire/bracket braces.",
+        "Get the smile you've always wanted with Invisalign®&nbsp;Orthodontics."]
+    },
+    {
+      "doubleWide": true,
+      "title": "Cosmetic Restorations",
+      "titleFull": "Cosmetic Restorations",
+      "image": "cosmetic.jpg",
+      "modalTarget": "cosmetic",
+      "text": ["Dental aesthetic restoration is one of the most cost-effective ways to improve your appearance. A beautiful, bright, healthy smile will increase self-confidence and overall life satisfaction, and make you look years younger. Crowns, veneers, tooth-colored porcelain fillings, and bonding are common techniques for dental restoration. We will recommend the best option for your case to restore your tooth to its full functionality and give you the beautiful smile you deserve.​"]
+    },
+    {
+      "doubleWide": false,
+      "title": "Family Care",
+      "titleFull": "Family Care",
+      "image": "family.jpg",
+      "modalTarget": "family",
+      "text": ["From children to the elderly, our skilled dental team is familiar with the unique needs of every patient, no matter their age. Our goal is to help you and your family develop great oral habits that will last a lifetime.",
+        "Join us today and discover how our practice can help treat your entire family."]
+    },
+    {
+      "doubleWide": false,
+      "title": "TMJ Treatment",
+      "titleMobil": "TMJ",
+      "titleFull": "TMJ Treatment",
+      "image": "tmj.jpg",
+      "modalTarget": "tmj",
+      "text": ["If you suffer from headaches or pain, clicking or popping while chewing, there may be problems with your temporomandibular joint (or TMJ). Call us today to schedule a free TMJ treatment consultation."]
+    },
+    {
+      "doubleWide": false,
+      "title": "Porcelain Veneers",
+      "titleMobil": "Veneers",
+      "titleFull": "Porcelain Veneers",
+      "image": "veneers.jpg",
+      "modalTarget": "veneers",
+      "text": ["Veneers are very thin porcelain pieces that are custom made to adhere directly to the front of teeth without grinding or shaving. Transform your smile without drilling on your natural teeth!",
+        "In the hands of a highly skilled dentist, porcelain laminates can provide you with an incredibly natural, beautiful smile. They are virtually undetectable and can dramatically improve your appearance. They are durable and long-lasting when compared to other cosmetic treatments."]
+    },
+    {
+      "doubleWide": false,
+      "title": "Headache Relief",
+      "titleMobil": "Headache?",
+      "titleFull": "Headache Relief",
+      "image": "trudenta.jpg",
+      "modalTarget": "trudenta",
+      "text": ["Our TruDenta® headache relief system combines sports medicine and dentistry in a non-invasive, drug-free treatment to heal constant migraine and headache pain. Contact us today to find out how this treatment can change your life!"]
+    }
+  ]}

@@ -1,0 +1,26 @@
+<div class="services-carousel">
+    <div class="heading">
+        <h2 class="title">More Services</h2>
+        <p>Click an item below to learn more.</p>
+    </div>
+
+    <div class="services-carousel__carousel">
+        <div class="container">
+            <div class="services-carousel--wrapper">
+                <div class="owl-carousel js-services-carousel">
+                    {% for service in services %}
+                        <div class="services-carousel__item">
+                            <a href="#" data-toggle="modal" data-target="#service-modal{{ service.modalTarget }}"><div class="services-carousel--image"><img src="assets/services/{{ service.image }}" alt="Service Image"></div></a>
+                            <div class="services-carousel__title">
+                                <a href="#" data-toggle="modal" data-target="#service-modal{{ service.modalTarget }}"><h5>{{ service.title }}</h5></a>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'molecules/services__modals.twig' %}
+</div>

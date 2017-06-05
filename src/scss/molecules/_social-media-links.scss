@@ -1,0 +1,25 @@
+@include social-media-link('facebook');
+@include social-media-link('yelp');
+@include social-media-link('instagram');
+@include social-media-link('youtube');
+@include social-media-link('google-plus');
+
+.icon-google-plus {
+  background-color: #DE4A39;
+  border-radius: 5px;
+  border: solid 1px #ffffff;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 42px;
+}
+
+#footer .si-facebook:hover, .si-colored.si-facebook {
+  background: none !important;
+}
+

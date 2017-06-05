@@ -1,0 +1,158 @@
+.about {
+  background-color: #EDE9E0;
+  .heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    &__main {
+      color: #000000;
+      font-family: $ff-sanchez;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+  }
+
+  //main slab
+  &__doctor {
+    padding-top: 15px;
+    padding-bottom: 45px;
+  }
+  .doctor {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+    }
+    &__video {
+      width: 47.5%;
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+    &__text {
+      width: 47.5%;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    &__name {
+      font-weight: 700;
+      margin-bottom: 5px;
+      line-height: 1;
+      @include font-size(36px, 32px, 24px, 24px, 20px);
+    }
+    &__byline {
+      margin-bottom: 30px;
+    }
+    &__copy {}
+  }
+
+
+  //team slab
+  &__team-slab {
+    background-color: #ffffff;
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
+  .team-card {
+    padding: 0 10px;
+    width: 25%;
+    @media (max-width: 767px) {
+      width: 50%;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__image {
+      display: block;
+      margin-bottom: 15px;
+    }
+    &__name {
+      display: block;
+      font-weight: 900;
+      margin-bottom: 5px;
+      line-height: 1;
+      @include font-size(24px,
+              22px,
+              20px,
+              20px,
+              20px);
+      @include link-color(#000000);
+    }
+    &__byline {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 5px;
+      line-height: 1;
+      @include link-color(#000000);
+    }
+    &__read-more {
+      display: block;
+      text-decoration: underline;
+      margin-bottom: 5px;
+      line-height: 1;
+      @include link-color(#000000);
+    }
+    @media screen and (min-width: 768px) {
+      &:hover {
+        .team-card__image {
+          @include hover-plus();
+        }
+        .team-card__name {
+          text-decoration: underline;
+        }
+        .team-card__byline {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  //Video Slab
+  &__video-slab {
+    background-color: #016e92;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .video-slab {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    &__copy, &__iframe {
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 47.5%;
+      }
+    }
+    &__title {
+      color: #ffffff;
+      font-family: $ff-sanchez;
+      margin-bottom: 5px;
+      line-height: 1;
+    }
+    &__byline {
+      color: #ffffff;
+      @include h5();
+    }
+    &__text {
+      color: #ffffff;
+    }
+  }
+}
+
+
+

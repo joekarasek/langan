@@ -1,0 +1,119 @@
+/// Call to Action Two to One Layout
+.cta__two-to-one {
+  background-color: #ffffff;
+  background-position: center;
+  z-index: 100;
+  position: relative;
+  padding-bottom: 15px;
+  padding-top: 25px;
+  &.shadow {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .flex--wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media screen and (max-width: $width-md) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .flex--item {
+    width: 33%;
+    @media screen and (max-width: $width-md) {
+      width: 100%;
+    }
+  }
+  .vertical-break {
+    width: 2px;
+    height: 30px;
+    background-color: black;
+  }
+
+  .new-patient {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    .text {
+      color: #000000;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+    &-number {
+      color: #000000;
+      font-weight: 700;
+      margin-bottom: 0;
+      line-height: 1;
+      font-family: $ff-lato;
+      @include font-size(36px, 33px, 30px, 28px, 28px);
+      a {
+        @include link-color(#000000);
+        &:hover {
+          text-decoration: none;
+        }
+      };
+    }
+    @media screen and (max-width: $width-md) {
+      border-left: 0;
+      text-align: center;
+      padding-bottom: 15px;
+      order: -1;
+    }
+  }
+
+  .btn {
+    &--wrapper {
+      .text {
+        color: #000000;
+        margin-bottom: 0;
+        font-weight: 400;
+      }
+      text-align: left;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: -1px;
+      border-left: 2px solid #595955;
+      @media screen and (max-width: $width-md) {
+        padding-bottom: 0;
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+        border-right: none;
+        border-left: 0;
+      }
+    }
+
+  }
+
+  .existing-patient {
+    color: #000000;
+    text-align: center;
+    line-height: 1;
+    .phone-number--existing {
+      font-weight: 700;
+      @include  h5();
+      @include link-color(#000000);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .btn--wrapper {
+    order: 1;
+    @media screen and (max-width: $width-md) {
+      order: 0;
+      padding-bottom: 10px;
+    }
+  }
+  .new-patient {
+    text-align: right;
+    @media screen and (max-width: $width-md) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+//=============================
+//    Dependencies
+//=============================
+@import "bootstrap";
+@import "animate";
+@import "dark";
+@import "font-icons";
+@import "swiper";
+@import "canvas";
+@import "responsive";
+
+//=============================
+//      Custom Styles
+//=============================
+@import "globals/*";
+@import "atoms/*";
+@import "molecules/*";
+@import "organisms/*";
+
+//=============================
+//      Shame Styles
+//=============================
+
+.link-no-style:hover {
+  text-decoration: none !important;
+}
+.bf-pro:hover {
+  text-decoration: underline !important;
+}
+.mobile-break {
+  @media  screen and (min-width: 480px) {
+    display: none;
+  }
+}
+
+a[data-target^="#team-"]:hover {
+  text-decoration: none;
+}

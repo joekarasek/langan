@@ -1,0 +1,27 @@
+{
+  "title" : "Great Scottsdale Dentist - Dr. Tom Piccolo",
+  "description" : "Dr. Tom Piccolo is one of Scottsdale’s most loved dentists. See our $45 new patient special!",
+  "keywords" : "piccolo dentistry, thomas j piccolo dds fagd, dr. tom piccolo, tom piccolo dds,  scottsdale dentist, family dentist, family dentistry, general dentist, cosmetic dentistry, cosmetic dentist, smile whitening, crowns and bridges, implant dentistry, sleep apnea treatment, sleep apnea, smile-whitening, dentures,  invisalign orthodontics, cosmetic restorations, restorations, tmj treatment, veneers, headache relief",
+  "mainDocter" : "Dr. Piccolo",
+  "mainDoctor" : "Dr. Piccolo",
+  "newPhone" : "1-888-906-1908",
+  "newPhoneNoBreak" : "(888)&nbsp;906&#8209;1908",
+  "existingPhone" : "1-480-951-2782",
+  "existingPhoneNoBreak" : "(480)&nbsp;951&#8209;2782",
+  "addressFirst" : "8591 E. Bell Road, Suite 100",
+  "addressLast" : "Scottsdale, AZ 85260",
+  "birdeye" : "1660955660",
+  "birdeyeScript" : "https://birdeye.com/embed/v4/149013955493486/3/1660955660",
+  "insuranceLink" : "https://thomas-j-piccolo-dds.illumitrac.com/#programs",
+  "googleMap" : "https://www.google.com/maps/place/Thomas+J.+Piccolo,+DDS,+FAGD/@33.6393064,-111.8949592,15z/data=!4m5!3m4!1s0x0:0x43535a71d0eb3bb5!8m2!3d33.6393064!4d-111.8949592",
+  "socialMediaLinks": [
+    {
+      "media": "facebook",
+      "link": "https://www.facebook.com/TomPiccoloDDS/"
+    },
+    {
+      "media": "google-plus",
+      "link": "https://www.google.com/maps/place/Thomas+J.+Piccolo,+DDS,+FAGD/@33.6393064,-111.8949592,15z/data=!4m2!3m1!1s0x0:0x43535a71d0eb3bb5?sa=X&ved=0ahUKEwj4-qCv5_zSAhVnsVQKHZBfDDoQ_BIIcDAK"
+    }
+  ]
+}
