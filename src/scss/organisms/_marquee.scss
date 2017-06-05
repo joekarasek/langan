@@ -30,48 +30,37 @@
 
   .slide1 {
     .slide__title {
-      color: #000000;
-      font-family: $ff-sanchez;
+      color: #2C2340;
+      font-family: $ff-dancing;
       line-height: 0.8;
       font-weight: 400;
       margin-bottom: 0;
-      @include  h2();
+      @include font-size(44px,
+              41px);
     }
     .slide__title-smile {
       color: #016E92;
-      @include h3();
-      font-family: $ff-lato;
+      @include font-size(95px,
+              76px);
+      font-family: $ff-raleway;
       font-weight: 700;
-      margin-bottom: 0;
+      margin-bottom: 60px;
       line-height: 1;
-      letter-spacing: 1.5px;
-    }
-    .slide__byline {
-      color: #000000;
-      font-family: $ff-play;
-      font-style: italic;
-      font-weight: 700;
-      margin-top: 30px;
-      @include font-size(40px,
-              36px,
-              35px,
-              30px,
-              30px);
+      text-shadow: 4px 3px 13px #ffffff;
     }
 
     .slide__copy {
-      @include font-size(21px,
-              19px,
+      @include font-size(33px,
+              32px,
               24px,
               24px,
               24px);
-      color: #000000;
-      font-family: $ff-sanchez;
+      color: #332A46;
+      font-family: $ff-lato;
       margin-top: 5px;
       margin-bottom: 15px;
       line-height: 1;
       font-weight: 400;
-      text-transform: uppercase;
     }
 
     //Align to bottom of slide
@@ -84,69 +73,45 @@
 
   .slide2 {
     .slide__title {
-      color: #016E92;
-      margin-bottom: 30px;
-      line-height: 0.4;
-      font-weight: 900;
-      font-family: $ff-lato;
-      text-transform: uppercase;
-      letter-spacing: 5.5px;
-      &:first-line {
-        text-transform: none;
-        letter-spacing: 1px;
-        color: #000000;
-        font-family: $ff-sanchez;
-        font-weight: 400;
-        @include h2();
-      }
-      @include font-size(34px,
-              32px,
-              35px,
-              30px,
-              30px);
+      font-family: $ff-dancing;
+      color: #2C2340;
+      margin-bottom: 0;
+      @include font-size(52px,
+              45px);
     }
-    //.stars {
-    //  line-height: 1.1;
-    //  margin-bottom: 15px;
-    //}
-    //.icon-star3 {
-    //  color: rgba(251, 221, 1, 0.71);
-    //}
-    .copy {
-      font-weight: 400;
-      line-height: 1.5;
-      margin-bottom: 25px;
-      padding-left: 35px;
-      padding-right: 35px;
+    .stars {
       padding-top: 10px;
-      @include font-size(17px, 16px, 18px, 20px, 19px);
+      padding-bottom: 20px;
+    }
+    .copy {
+      color: #332a46;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 25px;
+      @include font-size(29px, 23px, 18px, 20px, 19px);
     }
   }
   .slide3 {
     .title--no-insure {
-      font-family: $ff-sanchez;
-      color: #000000;
+      font-family: $ff-raleway;
+      color: #0068A9;
       margin-bottom: 5px;
       line-height: 1;
-      font-weight: 400;
-      @include  font-size(60px, 55px, 35px);
+      font-weight: 700;
+      @include  font-size(77px, 66px, 35px);
     }
     .title--sub {
-      color: #016E92;
-      font-family: $ff-lato;
-      font-weight: 900;
+      color: #2C2340;
+      font-family: $ff-dancing;
       line-height: 1;
-      margin-bottom: 55px;
-      text-transform: uppercase;
-      letter-spacing: 2.3px;
-      @include  font-size(35px, 32px, 35px);
+      margin-bottom: 40px;
+      @include  font-size(66px, 55px, 35px);
     }
     .preventative-copy {
-      font-family: $ff-sanchez;
-      color: #000000;
-      font-weight: 400;
+      font-family: $ff-lato;
+      color: #2C2340;
       line-height: 1;
-      @include font-size(27px, 22px);
+      @include font-size(42px, 36px);
     }
     .btn {
       @include lr-padding(80px, 60px, 60px);
