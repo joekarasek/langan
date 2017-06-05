@@ -3,16 +3,28 @@
         <div class="flex--wrapper">
             <div class="btn--wrapper flex--item">
                {% include 'atoms/request-appointment-button.twig' with {
-                   'buttonMod': '--style-two'
+                   'buttonMod': '--style-three'
                } %}
             </div>
             <div class="new-patient flex--item">
-                <h6 class="text">New Patient Hotline</h6>
+                <h6 class="text allow-orphan">
+                    <span class="hidden-xs hidden-sm">New Patients Hotline:</span>
+                    <span class="hidden-md hidden-lg">New Patients Hotline</span>
+                </h6>
                 <h2 class="new-patient-number allow-orphan">
                     {% include 'atoms/new-patient-number.twig' %}
                 </h2>
+                {% if existingPatients %}
+                    <span class="hidden-xs hidden-sm">
+                        <p class="existing-patient">Existing Patients: {% include 'atoms/existing-patient-number.twig' %}</p>
+                    </span>
+                {% endif %}
             </div>
+            {% if existingPatients %}
+                <span class="hidden-md hidden-lg">
+                    <p class="existing-patient">Existing Patients<br> {% include 'atoms/existing-patient-number.twig' %}</p>
+                </span>
+            {% endif %}
         </div>
-        {% if existingPatients %}<p class="existing-patient"><span class="hidden-xs hidden-sm">Existing patients of our practice call</span><span class="hidden-md hidden-lg">Existing patients call</span><br class="hidden-lg hidden-md"> {% include 'atoms/existing-patient-number.twig' %}</p>{% endif %}
     </div>
 </div>

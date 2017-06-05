@@ -4,39 +4,36 @@ button.btn {
   font-weight: 400 !important;
   @include font-size(20px, 19px, 18px, 17px, 15px);
 
-  background-color: #E9FFCB;
-  color: #000000;
-  border-radius: 0;
-  border: solid 2px #000000;
+  background-color: #CAED61;
+  color: #00595B;
+  border-radius: 30px;
+  border: solid 2px #00595B;
   padding: 10px 50px;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
+  //box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
 
   &:hover, &:focus {
-    background-color: #FAFFF3;
-    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.46);
+    background-color: darken(#CAED61, 15%);
+    //box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.46);
     transition: all .3s ease;
     text-decoration: none;
-    color: #000000;
   }
 
   &.btn--style-two {
-    background-color: #FBCC7E;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
+    background-color: #ffffff;
+    border-color: #0000B5;
+    color: #0000b5;
+    //box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
     &:hover, &:focus {
-      background-color: #F6A623;
-      box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.46);
+      background-color: rgba(0, 0, 181, 0.05);
+      //box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.46);
     }
   }
-  //&.btn--style-three {
-  //  background-color: rgba(255, 255, 255, 0.80);
-  //  color: #5a710d;
-  //  border: solid 2px #5a710d;
-  //  &:hover, &:focus {
-  //    background-color: #ffffff;
-  //    color: #5a710d;
-  //    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.36);
-  //  }
-  //}
+
+  &.btn--style-three {
+    border-color: #ffffff;
+  }
+
+
 
   &.shadowed {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.30);
