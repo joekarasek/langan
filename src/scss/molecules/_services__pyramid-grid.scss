@@ -1,8 +1,8 @@
 .services__pyramid-grid {
   //override bootstrap grid gutters
   .col-sm-6, .col-md-3 {
-    //padding-left: 0;
-    //padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
     position: relative;
     &:not(.service-card--double) {
       @media screen and (max-width: $width-sm) {
@@ -17,17 +17,16 @@
   }
 
   .service-card {
-    max-height: 448px;
     display: block;
     text-align: center;
     &__image-link {
       width: 100%;
       display: block;
       @media (min-width: 992px) {
-        img { height: 205px; }
+        img { }
       }
       @media (min-width: 1200px) {
-        img { height: 255px; }
+        img { }
       }
     }
 

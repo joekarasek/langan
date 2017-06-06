@@ -88,15 +88,16 @@
 /// Styling for the Birdeye Reviews Footer
 /// @group reviews
 /// @example #section
-@mixin birdeye-footer() {
+@mixin birdeye-footer($color:white, $shadow:false) {
   .bf-dv {
     padding-top: 30px;
-    padding-bottom: 60px;
-    color: #FFF !important;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: $color !important;
+    @if $shadow {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
   }
   .bf-pro {
-    color: #FFF !important;;
+    color: $color !important;;
     text-decoration: underline !important;
     &:hover {
       text-align: none !important;

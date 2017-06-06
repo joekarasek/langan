@@ -1,20 +1,20 @@
 #section-reviews {
-  background-image: url('/assets/reviews-bkgd.jpg');
-  background-size: cover;
+  background-image: url('/assets/reviews-bg.png');
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center bottom;
   padding-bottom: 30px;
+  border-bottom: solid #2D2D6C 4px;
 
 
 
   .heading {
-    font-family: $ff-sanchez;
     padding-top: 0;
     padding-bottom: $spacing-md;
     text-align: center;
     margin-bottom: $spacing-xs;
     margin-top: $spacing-md;
-    color: #000000;
+    color: #2C2340;
   }
   .row {
     padding-bottom: $spacing-lg;
@@ -27,8 +27,48 @@
       width: 100%;
     }
   }
-    @include birdeye-footer();
+    @include birdeye-footer(#2C2340);
 
+  //Video Slab
+  .reviews__video-slab {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .video-slab {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    &__copy, &__iframe {
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 47.5%;
+      }
+    }
+    &__title {
+      color: #2C2340;
+      font-family: $ff-raleway;
+      font-weight: 900;
+      margin-bottom: 30px;
+      line-height: 1;
+    }
+    &__byline {
+      color: #ffffff;
+      @include h5();
+    }
+    &__text {
+      text-align: left;
+      color: #2C2340;
+      @include h2();
+      font-family: $ff-lato;
+    }
+  }
 
   // Review Carousel Styling
   //.review-card {
