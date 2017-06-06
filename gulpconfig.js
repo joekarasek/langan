@@ -25,7 +25,7 @@ module.exports = {
     watchPaths: [
       'src/scss/**/*.scss'
     ],
-    lint: true,
+    lint: false,
     // outputStyles maybe 'expanded', 'compressed', 'nested'
     outputStyle: 'expanded',
     sourceMapEmbed: true,

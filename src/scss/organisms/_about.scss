@@ -7,6 +7,7 @@
     &__main {
       color: #2C2340;
       font-family: $ff-raleway;
+      font-weight: 900;
       margin-bottom: 0;
       line-height: 1;
     }
@@ -53,31 +54,30 @@
       }
     }
 
+  &__associations-slab {
+    background-color: #e8f1fa;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
   //team slab
   &__team-slab {
-    background-color: #ffffff;
+    background-color: #005E79;
     padding-top: 45px;
     padding-bottom: 30px;
+    &__title {
+      color: #ffffff;
+    }
   }
   .team-card {
     padding: 0 10px;
-    width: 25%;
-    @media (max-width: 767px) {
-      width: 50%;
-    }
-    &__wrapper {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
     &__image {
       display: block;
       margin-bottom: 15px;
     }
     &__name {
       display: block;
-      font-weight: 900;
+      font-weight: 700;
       margin-bottom: 5px;
       line-height: 1;
       @include font-size(24px,
@@ -85,21 +85,22 @@
               20px,
               20px,
               20px);
-      @include link-color(#000000);
+      @include link-color(#ffffff);
     }
     &__byline {
       display: block;
       font-size: 18px;
       margin-bottom: 5px;
       line-height: 1;
-      @include link-color(#000000);
+      @include link-color(#ffffff);
     }
     &__read-more {
       display: block;
       text-decoration: underline;
+      font-style: italic;
       margin-bottom: 5px;
       line-height: 1;
-      @include link-color(#000000);
+      @include link-color(#ffffff);
     }
     @media screen and (min-width: 768px) {
       &:hover {
@@ -118,7 +119,7 @@
 
   //Video Slab
   &__video-slab {
-    background-color: #016e92;
+    background-color: #ffffff;
     padding-top: 45px;
     padding-bottom: 45px;
   }
@@ -140,9 +141,10 @@
       }
     }
     &__title {
-      color: #ffffff;
-      font-family: $ff-sanchez;
-      margin-bottom: 5px;
+      color: #2C2340;
+      font-family: $ff-raleway;
+      font-weight: 900;
+      margin-bottom: 30px;
       line-height: 1;
     }
     &__byline {
@@ -150,7 +152,10 @@
       @include h5();
     }
     &__text {
-      color: #ffffff;
+      text-align: left;
+      color: #2C2340;
+      @include h2();
+      font-family: $ff-lato;
     }
   }
 }

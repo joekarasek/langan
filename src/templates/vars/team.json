@@ -1,44 +1,53 @@
 {
   "team": [
     {
-      "name": "Cindy",
+      "name": "Tammy",
       "carousel": true,
-      "modalTarget": "cindy",
-      "image": "cindy.jpg",
-      "title": "Office Receptionist",
+      "modalTarget": "tammy",
+      "image": "tammy.jpg",
+      "title": "Bio Coming Soon...",
       "text": [
-        "Hi my name is Cindy. I moved here nineteen years ago from Illinois, to escape the cold winters. I have three wonderful children and I’m very blessed with 4 beautiful grandchildren. My newest family member is my sweet puppy Mitzy. I will be the first and last face you see when you visit our office. I am very fortunate to have been able to join Dr. Piccolo’s fantastic team. I look forward to getting to know you on your next visit."
+        "Bio Coming Soon..."
       ]
     },
     {
-      "name": "Johnnie",
+      "name": "Keri",
       "carousel": true,
-      "modalTarget": "Johnnie",
-      "image": "johnnie.jpg",
-      "title": "Office Manager",
+      "modalTarget": "kery",
+      "image": "keri.jpg",
+      "title": "Bio Coming Soon...",
       "text": [
-        "My love for dentistry began thirty one years ago in Northern California. Working as a registered dental assistant and office manager. After moving to the hottest place on the plant! I was lucky enough to join Dr Piccolo’s team. Together we share a passion to provide genuine quality care to our patients. When I’m not working, I enjoy spending time with my husband, five children and five grandchildren. We love to BBQ, watch football and basketball. As well as spending time with my three dogs and two ferrets."
+        "Bio Coming Soon..."
       ]
     },
     {
-      "name": "Amber",
+      "name": "Lisa",
       "carousel": true,
-      "modalTarget": "amber",
-      "image": "amber.jpg",
-      "title": "Dental Hygienist",
+      "modalTarget": "lisa",
+      "image": "lisa.jpg",
+      "title": "Bio Coming Soon...",
       "text": [
-        "I moved to Phoenix from Atlanta, GA in 2003. I graduated from Fortis College, Summa Cum Laude, with my degree in Dental Hygiene, and I am also a graduate of Arizona State University. Go Devils!",
-        "During my free time, I enjoy spending time with my family, friends, and pets. I have two Rottweilers, Jasper and Willow, who keep me busy when I am not helping my patients improve their oral hygiene. I also enjoy gardening, playing cards, and traveling to Georgia to see my adorable niece and nephew."
+        "Bio Coming Soon..."
       ]
     },
     {
-      "name": "Yazmine",
+      "name": "Rebecca",
       "carousel": true,
-      "modalTarget": "yazmine",
-      "image": "yazmine.jpg",
-      "title": "Dental Assistant",
+      "modalTarget": "rebecca",
+      "image": "rebecca.jpg",
+      "title": "Bio Coming Soon...",
       "text": [
-        "Welcome to our beautiful office, Arizona! My name is Yazmine, and I’m Dr. Piccolo’s newest team member and his dental assistant, however I’ve been working as a dental assistant for over fifteen years. I recently moved to the area to spend more time with my sister and her family. I really love working with Dr. Piccolo’s patients, providing excellent care, and am looking forward to meeting you."
+        "Bio Coming Soon..."
+      ]
+    },
+    {
+      "name": "Shauna",
+      "carousel": true,
+      "modalTarget": "shauna",
+      "image": "shauna.jpg",
+      "title": "Bio Coming Soon...",
+      "text": [
+        "Bio Coming Soon..."
       ]
     }
   ]

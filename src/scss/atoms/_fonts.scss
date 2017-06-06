@@ -92,6 +92,7 @@ h2 {
 	@media (max-width: $width-xs) {
 		line-height: 1.1;
 	}
+	font-family: $ff-raleway;
 }
 
 @mixin h3() {
