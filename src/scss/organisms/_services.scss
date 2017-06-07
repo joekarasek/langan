@@ -4,13 +4,12 @@
   .heading {
     text-align: center;
     &__title {
-      color: #000000;
-      font-family: $ff-sanchez;
+      color: #1c1c60;
       margin-bottom: 0;
       padding-top: $spacing-md;
     }
     &__byline {
-      color: #000000;
+      color: #1c1c60;
       margin-bottom: 30px;
       a {
         color: #ffffff;
@@ -19,57 +18,36 @@
     }
   }
 
-  //.service-slab {
-  //  padding-top: 90px;
-  //  padding-bottom: 120px;
-  //  @media (max-width: 1199px) {
-  //    padding-top: 50px;
-  //    padding-bottom: 70px;
-  //  }
-  //  @media (max-width: 767px) {
-  //    padding-bottom: 0;
-  //  }
-  //
-  //  &__title {
-  //    color: #066a78;
-  //    line-height: 1;
-  //    margin-bottom: 0;
-  //  }
-  //  &__byline {
-  //    color: #4e5d6c;
-  //    font-family: $ff-poly;
-  //    font-style: italic;
-  //  }
-  //  &__copy {
-  //    color: #585756;
-  //    line-height: 1.5;
-  //  }
-  //
-  //  &--family {
-  //    background-image: url(/assets/services/family-care.jpg);
-  //    background-size: contain;
-  //    background-repeat: no-repeat;
-  //    background-position: right;
-  //    @media (max-width: 767px ) {
-  //      background-image: none;
-  //    }
-  //    @media (min-width: 768px) and (max-width: 991px) {
-  //      .service-slab__title {
-  //        font-size: 40px;
-  //      }
-  //      .service-slab__copy {
-  //        max-width: 300px;
-  //      }
-  //    }
-  //  }
-  //  &--cosmetic {
-  //    background-image: url(/assets/services/cosmetic.jpg);
-  //    background-size: contain;
-  //    background-repeat: no-repeat;
-  //    background-position: left;
-  //    @media (max-width: 767px ) {
-  //      background-image: none;
-  //    }
-  //  }
-  //}
+  .implant-slab {
+    background-image: url('/assets/services/implant-dentistry.jpg');
+    background-size: cover;
+    &__card {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    &__title {
+      color: #1c1c60;
+    }
+    &__copy {
+      color: #1c1c60;
+      line-height: 1.4;
+    }
+  }
+
+  .dentures-slab {
+    background-image: url('/assets/services/cosmetic-dentures.jpg');
+    background-size: cover;
+    &__card {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    &__title {
+      color: #1c1c60;
+    }
+    &__copy {
+      color: #1c1c60;
+      line-height: 1.4;
+    }
+  }
+
 }
