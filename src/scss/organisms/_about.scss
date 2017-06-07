@@ -59,6 +59,7 @@
 
     &__mobile-image img {
       width: 100%;
+      margin-top: -20px;
 
       @media (min-width: 768px) {
         display: none;
@@ -184,7 +185,7 @@
       color: #2c2340;
       font-family: $ff-lato;
 
-      @include h2();
+      @include font-size(32px, 28px, 26px, 24px, 20px);
     }
   }
 }

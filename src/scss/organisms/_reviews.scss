@@ -8,10 +8,9 @@
 
   .heading {
     padding-top: 0;
-    padding-bottom: $spacing-md;
     text-align: center;
-    margin-bottom: $spacing-xs;
     margin-top: $spacing-md;
+    margin-bottom: 10px;
     color: #2c2340;
   }
 
@@ -31,8 +30,8 @@
 
   //Video Slab
   .reviews__video-slab {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .video-slab {
@@ -71,11 +70,17 @@
     }
 
     &__text {
-      text-align: left;
+      text-align: center;
       color: #2c2340;
       font-family: $ff-lato;
+      padding-top: 30px;
 
-      @include h2();
+      @media (min-width: 768) {
+        padding-top: 0;
+        text-align: left;
+      }
+
+      @include font-size(32px, 28px, 26px, 24px, 20px);
     }
   }
   // Review Carousel Styling

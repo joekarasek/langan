@@ -1,5 +1,7 @@
 #section-forms {
   background-image: url('/assets/forms-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 45px;
   padding-bottom: 45px;
 
@@ -19,8 +21,8 @@
   .forms {
     &__byline {
       color: #424242;
-      font-size: 20px;
-      padding-bottom: 30px;
+      font-size: 18px;
+      padding-bottom: 15px;
     }
 
     &__copy {
@@ -34,9 +36,17 @@
         }
       }
     }
+
+    &__btn-wrapper {
+      padding-bottom: 30px;
+    }
   }
 
   .btn {
-    margin: -10px 30px 45px;
+    margin: 10px 0;
+
+    @media (min-width: 768px) {
+      margin: -10px 30px 45px;
+    }
   }
 }

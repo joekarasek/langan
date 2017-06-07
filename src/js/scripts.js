@@ -3,9 +3,6 @@
   // ======= Fixes =======
   HelloWorldDevsTysonSteele.noOrphans('h1,h2,h3,h4,h5,h6,li,p', '.allow-orphan');
   HelloWorldDevsTysonSteele.scrollToFix('#primary-menu');
-  HelloWorldDevsTysonSteele.stopVideoModal('#video-review-modal--one', '#video-review-iframe--one');
-  HelloWorldDevsTysonSteele.stopVideoModal('#video-review-modal--two', '#video-review-iframe--two');
-  HelloWorldDevsTysonSteele.stopVideoModal('#video-review-modal--three', '#video-review-iframe--three');
 
   // ======= Request Appointment Form =======
   HelloWorldDevsTysonSteele.requestAppointment('#mail-form', '#success_msg' , '7fb35345-752d-4792-9480-cd3db6674a62');
@@ -68,14 +65,8 @@
   });
   HelloWorldDevsTysonSteele.updateCopyright('.js-copyright-year');
 
-  // Remove last name from team cards
-  $('.team-card__title').each(function() {
-    var firstWord = $(this).text().split(' ');
-    $(this).text(firstWord[0]);
-  });
-
   // ======= Google Maps =======
-  HelloWorldDevsTysonSteele.googleMap('#google-map5', '33.6392813,-111.8949859', '33.6392813,-111.8949859');
+  HelloWorldDevsTysonSteele.googleMap('#google-map5', '42.0329231,-97.4641569', '42.0329231,-97.4641569');
 
 
 }(jQuery, HelloWorldDevsTysonSteele));
