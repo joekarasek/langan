@@ -70,7 +70,7 @@
   }
 
   &__map-link {
-    color: #00595B;
+    color: #00595b;
     text-decoration: underline;
     font-size: 18px;
   }
@@ -87,20 +87,20 @@
     font-size: 44px;
     font-weight: 700;
     font-family: $ff-lato;
-    color: #007A7C;
+    color: #007a7c;
     margin-bottom: 5px;
     line-height: 1;
 
     @include font-size(40px, 36px, 32px, 36px, 32px);
 
     &:hover {
-      color: #007A7C;
+      color: #007a7c;
       text-decoration: none;
     }
   }
 
   &__existing-patient-text {
-    color: #1C1836;
+    color: #1c1836;
     margin-top: 15px;
     line-height: 1;
     margin-bottom: 15px;
@@ -108,10 +108,10 @@
   }
 
   &__existing-patient-number {
-    color: #1C1836;
+    color: #1c1836;
 
     &:hover {
-      color: #1C1836;
+      color: #1c1836;
       text-decoration: none;
     }
   }
