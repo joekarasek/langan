@@ -2,46 +2,45 @@ a.btn,
 button.btn {
   font-family: $ff-lato;
   font-weight: 400 !important;
-  @include font-size(20px, 19px, 18px, 17px, 15px);
-
-  background-color: #CAED61;
-  color: #00595B;
+  background-color: #caed61;
+  color: #00595b;
   border-radius: 30px;
-  border: solid 2px #00595B;
+  border: solid 2px #00595b;
   padding: 10px 50px;
   //box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
 
-  &:hover, &:focus {
-    background-color: darken(#CAED61, 15%);
+  @include font-size(20px, 19px, 18px, 17px, 15px);
+
+  &:hover,
+  &:focus {
+    background-color: darken(#caed61, 15%);
     //box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.46);
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     text-decoration: none;
   }
 
   &.btn--style-two {
-    background-color: #ffffff;
-    border-color: #0000B5;
+    background-color: #fff;
+    border-color: #0000b5;
     color: #0000b5;
     //box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.36);
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
       background-color: rgba(0, 0, 181, 0.05);
       //box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.46);
     }
   }
 
   &.btn--style-three {
-    border-color: #ffffff;
+    border-color: #fff;
   }
 
-
-
   &.shadowed {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.30);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   &.form-btn {
     width: 100%;
-
   }
-
 }

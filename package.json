@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "htmlhint": "^0.9.13"
+  },
   "devDependencies": {
     "gulp": "github:gulpjs/gulp#4.0",
     "joes-gulp-tasks": "^0.4.0"
   },
   "scripts": {
     "precommit": "npm test",
-    "test": "gulp validate",
+    "test": "stylelint src/scss/**/*.scss",
     "start": "gulp",
     "gulp": "gulp --tasks && gulp",
     "gulp:tasks": "gulp --tasks",

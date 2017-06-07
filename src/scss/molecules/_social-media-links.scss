@@ -5,9 +5,9 @@
 @include social-media-link('google-plus');
 
 .icon-google-plus {
-  background-color: #DE4A39;
+  background-color: #de4a39;
   border-radius: 5px;
-  border: solid 1px #ffffff;
+  border: solid 1px #fff;
 }
 
 .social-media-links {
@@ -19,7 +19,7 @@
   height: 42px;
 }
 
-#footer .si-facebook:hover, .si-colored.si-facebook {
+#footer .si-facebook:hover,
+.si-colored.si-facebook {
   background: none !important;
 }
-

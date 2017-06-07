@@ -1,9 +1,9 @@
 #section-insurance {
 
-  $c-no-insurance: #0068A9;
-  $c-sub-header: #2C2340;
-  $c-preventative: #2C2340;
-  $c-copy: #000000;
+  $c-no-insurance: #0068a9;
+  $c-sub-header: #2c2340;
+  $c-preventative: #2c2340;
+  $c-copy: #000;
   $c-mobile-bg: white;
 
   padding-top: 50px;
@@ -11,10 +11,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+
   @media (max-width: $width-sm - 1) {
     background-color: $c-mobile-bg;
     background-image: none;
-    .row>div {
+
+    .row > div {
       text-align: center;
     }
   }
@@ -23,55 +25,63 @@
     font-family: $ff-raleway;
     text-transform: uppercase;
     font-weight: 900;
-    @include font-size(77px, 57px, 48px, 43px, 32px);
-    @media (width: 768px) {
-      font-size: 40px;
-    }
     margin-bottom: 0;
     line-height: 1.1;
     color: $c-no-insurance;
+
+    @include font-size(77px, 57px, 48px, 43px, 32px);
+
+    @media (width: 768px) {
+      font-size: 40px;
+    }
   }
+
   .sub-title {
-    @include font-size(54px,
-                       44px,
-                       33px,
-                       32px,
-                       22px);
     font-weight: 900;
     color: $c-sub-header;
     margin-bottom: 0;
     display: inline-block;
     font-family: $ff-dancing;
+
+    @include font-size(54px, 44px, 33px, 32px, 22px);
   }
+
   .care-text {
     font-family: $ff-lato;
     font-weight: 400;
     line-height: 1;
     padding-top: 30px;
     color: $c-preventative;
+
     @include font-size(44px, 34px, 28px, 27px, 20px);
   }
+
   .list-item {
     list-style: none;
+
     p {
       color: $c-copy;
       list-style: none;
-      @include font-size(25px, 19px, 14px, 18px, 14px);
       font-size: 21px;
       margin-bottom: 0;
       line-height: 1.2;
+
+      @include font-size(25px, 19px, 14px, 18px, 14px);
     }
   }
+
   .btn {
     padding-top: 10px;
     padding-bottom: 10px;
-    @include lr-padding(80px, 70px, 60px, 60px, 40px);
     margin-bottom: 100px;
+
+    @include lr-padding(80px, 70px, 60px, 60px, 40px);
   }
 
   //Fix for insurance background on mobile
   .mobile-insurance-fix {
     display: none;
+
     @media (max-width: $width-sm - 1) {
       margin-top: -100px;
       display: block;

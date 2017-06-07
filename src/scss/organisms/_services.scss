@@ -1,16 +1,19 @@
-#section-services {s
+#section-services {
   .heading {
     text-align: center;
+
     &__title {
       color: #1c1c60;
       margin-bottom: 0;
       padding-top: $spacing-md;
     }
+
     &__byline {
       color: #1c1c60;
       margin-bottom: 30px;
+
       a {
-        color: #ffffff;
+        color: #fff;
         text-decoration: underline;
       }
     }
@@ -19,13 +22,16 @@
   .implant-slab {
     background-image: url('/assets/services/implant-dentistry.jpg');
     background-size: cover;
+
     &__card {
       padding-top: 60px;
       padding-bottom: 60px;
     }
+
     &__title {
       color: #1c1c60;
     }
+
     &__copy {
       color: #1c1c60;
       line-height: 1.4;
@@ -35,17 +41,19 @@
   .dentures-slab {
     background-image: url('/assets/services/cosmetic-dentures.jpg');
     background-size: cover;
+
     &__card {
       padding-top: 60px;
       padding-bottom: 60px;
     }
+
     &__title {
       color: #1c1c60;
     }
+
     &__copy {
       color: #1c1c60;
       line-height: 1.4;
     }
   }
-
 }

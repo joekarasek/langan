@@ -1,9 +1,11 @@
 .services__pyramid-grid {
   //override bootstrap grid gutters
-  .col-sm-6, .col-md-3 {
+  .col-sm-6,
+  .col-md-3 {
     padding-left: 0;
     padding-right: 0;
     position: relative;
+
     &:not(.service-card--double) {
       @media screen and (max-width: $width-sm) {
         width: 50%;
@@ -64,35 +66,29 @@
     display: block;
     text-align: center;
     position: relative;
+
     &__image-link {
       width: 100%;
       display: block;
-      @media (min-width: 992px) {
-        img { }
-      }
-      @media (min-width: 1200px) {
-        img { }
-      }
     }
 
     &__title {
       display: block;
-      color: #ffffff;
-      @include link-color(#ffffff);
+      color: #fff;
       margin-bottom: 0;
+
+      @include link-color(#fff);
       @include font-size(23px, 18px, 21px, 20px, 19px);
     }
+
     &__learn-more {
       display: block;
-      color: #ffffff;
-      @include link-color(#ffffff);
+      color: #fff;
       line-height: 1;
       text-decoration: underline;
-      @include font-size(18px,
-              14px,
-              17px,
-              15px,
-              14px);
+
+      @include link-color(#fff);
+      @include font-size(18px, 14px, 17px, 15px, 14px);
     }
 
     &__copy {
@@ -104,19 +100,22 @@
       padding: 15px 20px;
       bottom: 0;
       width: 100%;
-      color: #ffffff;
+      color: #fff;
       text-decoration: underline;
+
       img {
         width: 30px;
         height: 32px;
       }
     }
-      &:nth-child(2n) .service-card__copy {
-        background-color: rgba(28, 28, 96, 0.75);
-      }
-      &:nth-child(2n - 1) .service-card__copy {
-        background-color: rgba(0, 94, 121, 0.75);
-      }
+
+    &:nth-child(2n) .service-card__copy {
+      background-color: rgba(28, 28, 96, 0.75);
+    }
+
+    &:nth-child(2n - 1) .service-card__copy {
+      background-color: rgba(0, 94, 121, 0.75);
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -124,8 +123,9 @@
       .service-card__image-link {
         @include hover-plus();
       }
+
       .service-card__title {
-        color: #ffffff;
+        color: #fff;
         text-decoration: underline;
       }
     }

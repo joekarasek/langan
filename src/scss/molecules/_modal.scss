@@ -18,6 +18,7 @@
   &.modal-wide .modal-dialog {
     width: $width;
   }
+
   &.modal-wide .modal-body {
     //overflow-y: auto;
   }
@@ -28,7 +29,12 @@
 }
 
 .modal-dialog {
-  h4, p, span { color: #000000 !important;}
+  h4,
+  p,
+  span {
+    color: #000 !important;
+  }
+
   img {
     max-height: 250px !important;
   }
@@ -41,6 +47,8 @@
 }
 
 .modal-header {
+  border-bottom: none;
+
   button.close {
     font-family: sans-serif;
     font-size: 50px;
@@ -48,7 +56,6 @@
     opacity: 0.8;
     margin-top: -10px;
   }
-  border-bottom: none;
 }
 
 .modal-title {

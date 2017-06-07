@@ -1,17 +1,19 @@
 .down-arrow {
-  &>a {
+  & > a {
     display: inline-block;
   }
+
   &--img {
     position: relative;
     transform: translate(-50%, -50%);
   }
+
   &__wrapper {
     position: absolute;
     text-align: center;
     width: 100%;
     transform: translateY(-75%);
-    z-index:150;
+    z-index: 150;
   }
 }
 

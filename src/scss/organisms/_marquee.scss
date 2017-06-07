@@ -1,6 +1,5 @@
 #marquee-slider {
 
-
   //.swiper-slide.slide1 {
   //  background-image: url('assets/slide1.jpg');
   //  background-position: 30% center;
@@ -17,9 +16,11 @@
     > img {
       width: 100%;
     }
+
     .container {
       height: 100%;
     }
+
     .row {
       transform: translateY(-50%);
       top: 50%;
@@ -27,40 +28,37 @@
     }
   }
 
-
   .slide1 {
     .slide__title {
-      color: #2C2340;
+      color: #2c2340;
       font-family: $ff-dancing;
       line-height: 0.8;
       font-weight: 400;
       margin-bottom: 0;
-      @include font-size(44px,
-              41px);
+
+      @include font-size(44px, 41px);
     }
+
     .slide__title-smile {
-      color: #016E92;
-      @include font-size(95px,
-              76px);
+      color: #016e92;
       font-family: $ff-raleway;
       font-weight: 700;
       margin-bottom: 60px;
       line-height: 1;
-      text-shadow: 4px 3px 13px #ffffff;
+      text-shadow: 4px 3px 13px #fff;
+
+      @include font-size(95px, 76px);
     }
 
     .slide__copy {
-      @include font-size(33px,
-              32px,
-              24px,
-              24px,
-              24px);
-      color: #332A46;
+      color: #332a46;
       font-family: $ff-lato;
       margin-top: 5px;
       margin-bottom: 15px;
       line-height: 1;
       font-weight: 400;
+
+      @include font-size(33px, 32px, 24px, 24px, 24px);
     }
 
     //Align to bottom of slide
@@ -74,45 +72,55 @@
   .slide2 {
     .slide__title {
       font-family: $ff-dancing;
-      color: #2C2340;
+      color: #2c2340;
       margin-bottom: 0;
-      @include font-size(52px,
-              45px);
+
+      @include font-size(52px, 45px);
     }
+
     .stars {
       padding-top: 10px;
       padding-bottom: 20px;
     }
+
     .copy {
       color: #332a46;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 25px;
+
       @include font-size(29px, 23px, 18px, 20px, 19px);
     }
   }
+
   .slide3 {
     .title--no-insure {
       font-family: $ff-raleway;
-      color: #0068A9;
+      color: #0068a9;
       margin-bottom: 5px;
       line-height: 1;
       font-weight: 700;
-      @include  font-size(77px, 66px, 35px);
+
+      @include font-size(77px, 66px, 35px);
     }
+
     .title--sub {
-      color: #2C2340;
+      color: #2c2340;
       font-family: $ff-dancing;
       line-height: 1;
       margin-bottom: 40px;
-      @include  font-size(66px, 55px, 35px);
+
+      @include font-size(66px, 55px, 35px);
     }
+
     .preventative-copy {
       font-family: $ff-lato;
-      color: #2C2340;
+      color: #2c2340;
       line-height: 1;
+
       @include font-size(42px, 36px);
     }
+
     .btn {
       @include lr-padding(80px, 60px, 60px);
     }
@@ -129,11 +137,11 @@
     right: 0;
     bottom: 0;
   }
-
 }
 
 #mobile-background {
   display: none;
+
   @media (max-width: $width-md) {
     display: block;
     position: relative;

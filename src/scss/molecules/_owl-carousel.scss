@@ -14,20 +14,22 @@ $offset: -25px;
   border: none;
   font-size: 32px;
   border-radius: 0;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
+
   & [class*=icon-] {
     font-size: 32px;
   }
+
   img {
     @include vertical-center;
   }
 }
+
 .owl-carousel:hover .owl-nav [class*=owl-] img {
   //display: block;
-  transition: display .3s ease;
+  transition: display 0.3s ease;
 }
+
 .owl-carousel .owl-nav .owl-prev {
   left: $offset;
 }
@@ -36,6 +38,7 @@ $offset: -25px;
   left: auto;
   right: $offset;
 }
+
 .owl-carousel:hover .owl-nav .owl-prev {
   left: $offset;
 }

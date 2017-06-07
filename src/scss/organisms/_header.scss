@@ -1,13 +1,15 @@
 #header.full-header {
+
+  $c-header: #fff;
+  $c-menu-trigger: #000;
+  $nav-font: $ff-lato;
+
   width: 100%;
   height: 100px;
 
-  $c-header: #ffffff ;
-  $c-menu-trigger: #000000;
-  $nav-font: $ff-lato;
-
   &--transparent {
     position: absolute;
+
     @media screen and (max-width: $width-md) {
       position: relative;
       border-bottom: 0 solid;
@@ -22,11 +24,13 @@
     font-size: 18px;
     font-family: $ff-lato;
     margin-bottom: 0;
+
     &__phone {
       font-size: 22px;
       font-weight: 700;
+
       &:hover {
-        color: #000000;
+        color: #000;
         text-decoration: none !important;
       }
     }
@@ -35,10 +39,11 @@
   #primary-menu > ul {
     margin-right: 0;
     border-right: none;
-    @include nav-color(#2C2340);
+
+    @include nav-color(#2c2340);
     @include nav-color(#171774, 1, 700);
-    @include nav-color(#008C8F, 2, 700);
-    @include nav-color(#789F00, 3, 700);
+    @include nav-color(#008c8f, 2, 700);
+    @include nav-color(#789f00, 3, 700);
   }
 
   #primary-menu-trigger {
@@ -47,16 +52,19 @@
     float: left;
     top: 15px;
   }
+
   #header-wrap {
     background-color: $c-header;
     border-bottom: 0;
+
     @media screen and (max-width: $width-md) {
-      background-color: #fffff;
+      background-color: #fff;
     }
   }
+
   #logo {
     padding-right: 0;
-    margin-right: 0px;
+    margin-right: 0;
     border-right: none;
     padding-left: 30px;
     display: flex;
@@ -68,20 +76,20 @@
     color: $c-menu-trigger;
   }
 
-
-  
   //when you scroll down
   &.sticky-header {
     #primary-menu ul {
       padding-top: 15px;
-      transition: padding-top .3s ease;
+      transition: padding-top 0.3s ease;
     }
   }
+
   #logo img {
     padding: 2px;
     padding-left: 5px;
     max-width: 240px;
   }
+
   @media screen and (max-width: $width-md) {
     #logo {
       img {
@@ -90,10 +98,11 @@
         max-width: 240px;
       }
     }
+
     #primary-menu-trigger {
       right: 0;
       left: auto;
-      color: #343B42;
+      color: #343b42;
     }
   }
 
@@ -101,6 +110,7 @@
   #primary-menu ul {
     padding-top: 25px;
   }
+
   &.sticky-header {
     #primary-menu ul {
       padding-top: 20px;
@@ -109,70 +119,78 @@
 
   #primary-menu ul li {
     @media screen and (max-width: $width-md) {
-      border-top: 1px solid #000000;
-      background-color: #ffffff;
+      border-top: 1px solid #000;
+      background-color: #fff;
+
       &:last-child {
-        border-bottom: 1px solid #000000;
+        border-bottom: 1px solid #000;
       }
     }
   }
+
   :not(.static-sticky) #primary-menu ul > li > a {
     letter-spacing: 1px;
     font-size: 18px;
-    padding: 15px 12px;
+    padding: 15px 12px 10px;
     font-family: $ff-lato;
     font-weight: 700;
     text-transform: none;
-    transition: padding .3s ease;
+    transition: padding 0.3s ease;
+
     &:hover {
       text-decoration: none !important;
     }
+
     @media screen and (max-width: 1300px) {
       font-size: 15px;
       padding: 15px 10px;
       padding-bottom: 10px;
     }
+
     @media screen and (max-width: $width-lg) {
       font-size: 14px;
       letter-spacing: 0.7px;
       padding: 15px 6px;
       padding-bottom: 10px;
     }
+
     @media screen and (max-width: 1090px) {
       font-size: 13px;
     }
+
     @media screen and (max-width: 991px) {
+      padding: 15px 10px;
       padding-left: 40px !important;
       font-size: 18px;
-      padding: 15px 10px;
     }
-    @media screen and (max-width: $width-sm) {
-    }
-    @media screen and (max-width: $width-xs) {
-    }
-    padding-bottom: 10px;
+    //@media screen and (max-width: $width-sm) {
+    //}
+    //
+    //@media screen and (max-width: $width-xs) {
+    //}
   }
+
   div {
     font-family: $nav-font;
   }
 }
-
-
 
 //resize header from Canvas
 #header,
 #header-wrap,
 #logo {
   height: 110px !important;
-  transition: height .4s ease, opacity .3s ease;
+  transition: height 0.4s ease, opacity 0.3s ease;
+
   @media (max-width: $width-md) {
-  height: 100px !important;
+    height: 100px !important;
   }
 }
 
 #logo img {
   height: 100px !important;
-  transition: height .4s ease, opacity .3s ease;
+  transition: height 0.4s ease, opacity 0.3s ease;
+
   @media (max-width: $width-md) {
     height: 85px !important;
   }

@@ -1,11 +1,13 @@
 .about {
-  background-color: #ffffff;
+  background-color: #fff;
+
   .heading {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+
     &__main {
-      color: #2C2340;
+      color: #2c2340;
       font-family: $ff-raleway;
       font-weight: 900;
       margin-bottom: 0;
@@ -16,6 +18,7 @@
   //main slab
   &__doctor-slab {
     padding-top: 30px;
+
     @media (min-width: 768px) {
       background-image: url('/assets/langan-bio.jpg');
       background-size: cover;
@@ -24,35 +27,44 @@
       padding-bottom: 60px;
     }
   }
-    .doctor {
-      padding-top: 30px;
-      padding-bottom: 30px;
+
+  .doctor {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    @media (min-width: 992px) {
+      width: 60%;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__name {
+      color: #007c9f;
+      font-family: $ff-raleway;
+      font-weight: 700;
+
+      @include h4();
+    }
+
+    &__copy {
+      color: #1c1836;
+    }
+
+    &__mobile-image img {
+      width: 100%;
+
       @media (min-width: 768px) {
-        width: 50%;
-      }
-      @media (min-width: 992px) {
-        width: 60%;
-      }
-      &__wrapper {
-        display: flex;
-        justify-content: flex-end;
-      }
-      &__name {
-        @include h4();
-        color: #007c9f;
-        font-family: $ff-raleway;
-        font-weight: 700;
-      }
-      &__copy {
-        color: #1c1836;
-      }
-      &__mobile-image img {
-        width: 100%;
-        @media (min-width: 768px) {
-          display: none;
-        }
+        display: none;
       }
     }
+  }
 
   &__associations-slab {
     background-color: #e8f1fa;
@@ -62,54 +74,62 @@
 
   //team slab
   &__team-slab {
-    background-color: #005E79;
+    background-color: #005e79;
     padding-top: 45px;
     padding-bottom: 30px;
+
     &__title {
-      color: #ffffff;
+      color: #fff;
     }
   }
+
   .team-card {
     padding: 0 10px;
+
     &__image {
       display: block;
       margin-bottom: 15px;
     }
+
     &__name {
       display: block;
       font-weight: 700;
       margin-bottom: 5px;
       line-height: 1;
-      @include font-size(24px,
-              22px,
-              20px,
-              20px,
-              20px);
-      @include link-color(#ffffff);
+
+      @include font-size(24px, 22px, 20px, 20px, 20px);
+      @include link-color(#fff);
     }
+
     &__byline {
       display: block;
       font-size: 18px;
       margin-bottom: 5px;
       line-height: 1;
-      @include link-color(#ffffff);
+
+      @include link-color(#fff);
     }
+
     &__read-more {
       display: block;
       text-decoration: underline;
       font-style: italic;
       margin-bottom: 5px;
       line-height: 1;
-      @include link-color(#ffffff);
+
+      @include link-color(#fff);
     }
+
     @media screen and (min-width: 768px) {
       &:hover {
         .team-card__image {
           @include hover-plus();
         }
+
         .team-card__name {
           text-decoration: underline;
         }
+
         .team-card__byline {
           text-decoration: underline;
         }
@@ -119,7 +139,7 @@
 
   //Video Slab
   &__video-slab {
-    background-color: #ffffff;
+    background-color: #fff;
     padding-top: 45px;
     padding-bottom: 45px;
   }
@@ -129,36 +149,42 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
       @media (min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
       }
     }
-    &__copy, &__iframe {
+
+    &__copy,
+    &__iframe {
       width: 100%;
+
       @media (min-width: 768px) {
         width: 47.5%;
       }
     }
+
     &__title {
-      color: #2C2340;
+      color: #2c2340;
       font-family: $ff-raleway;
       font-weight: 900;
       margin-bottom: 30px;
       line-height: 1;
     }
+
     &__byline {
-      color: #ffffff;
+      color: #fff;
+
       @include h5();
     }
+
     &__text {
       text-align: left;
-      color: #2C2340;
-      @include h2();
+      color: #2c2340;
       font-family: $ff-lato;
+
+      @include h2();
     }
   }
 }
-
-
-
