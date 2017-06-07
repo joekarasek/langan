@@ -7,23 +7,25 @@
                } %}
             </div>
             <div class="new-patient flex--item">
-                <h6 class="text allow-orphan">
-                    <span class="hidden-xs hidden-sm">New Patients Hotline:</span>
-                    <span class="hidden-md hidden-lg">New Patients Hotline</span>
-                </h6>
+                <div class="hidden-xs hidden-sm">
+                    <h6 class="text allow-orphan">New Patients Hotline:</h6>
+                </div>
+                <div class="hidden-md hidden-lg">
+                    <h6 class="text allow-orphan">New Patients Hotline</h6>
+                </div>
                 <h2 class="new-patient-number allow-orphan">
                     {% include 'atoms/new-patient-number.twig' %}
                 </h2>
                 {% if existingPatients %}
-                    <span class="hidden-xs hidden-sm">
+                    <div class="hidden-xs hidden-sm">
                         <p class="existing-patient">Existing Patients: {% include 'atoms/existing-patient-number.twig' %}</p>
-                    </span>
+                    </div>
                 {% endif %}
             </div>
             {% if existingPatients %}
-                <span class="hidden-md hidden-lg">
+                <div class="hidden-md hidden-lg">
                     <p class="existing-patient">Existing Patients<br> {% include 'atoms/existing-patient-number.twig' %}</p>
-                </span>
+                </div>
             {% endif %}
         </div>
     </div>
