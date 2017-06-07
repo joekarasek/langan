@@ -47,12 +47,13 @@
   }
 
   &__doctor {
-    color: #435363;
-    font-weight: 500;
+    color: #00595b;
+    font-family: $ff-raleway;
+    font-weight: 900;
     font-size: 28px;
     line-height: 1;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
     @media (max-width: 550px) {
       font-size: 26px;
@@ -64,12 +65,12 @@
   }
 
   &__address {
-    color: #000;
+    color: #1c1836;
     font-size: 20px;
   }
 
   &__map-link {
-    color: #aa422f;
+    color: #00595B;
     text-decoration: underline;
     font-size: 18px;
   }
@@ -86,20 +87,20 @@
     font-size: 44px;
     font-weight: 700;
     font-family: $ff-lato;
-    color: #000;
-    margin-bottom: 30px;
+    color: #007A7C;
+    margin-bottom: 5px;
     line-height: 1;
 
-    @include font-size(36px, 34px, 32px, 36px, 32px);
+    @include font-size(40px, 36px, 32px, 36px, 32px);
 
     &:hover {
-      color: #000;
+      color: #007A7C;
       text-decoration: none;
     }
   }
 
   &__existing-patient-text {
-    color: #000;
+    color: #1C1836;
     margin-top: 15px;
     line-height: 1;
     margin-bottom: 15px;
@@ -107,13 +108,10 @@
   }
 
   &__existing-patient-number {
-    font-size: 24px;
-    line-height: 1;
-    margin-bottom: 30px;
-    color: #000;
+    color: #1C1836;
 
     &:hover {
-      color: #000;
+      color: #1C1836;
       text-decoration: none;
     }
   }
@@ -123,12 +121,11 @@
     margin-bottom: 20px;
   }
 
-  &__jubilee {
-    display: block;
-
-    img {
-      max-width: 240px;
-    }
+  &__welcoming-patients {
+    color: #1c1836;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 24px;
   }
 
   &__social-media {
@@ -143,17 +140,19 @@
     }
 
     h5 {
-      font-weight: 700;
-      color: #000;
+      font-weight: 900;
+      font-family: $ff-raleway;
+      font-size: 28px;
+      color: #00595b;
       text-transform: uppercase;
     }
 
-    tbody {
+    p {
+      color: #1c1836;
       font-size: 18px;
       font-family: $ff-lato;
-      line-height: 1.5;
-      margin-left: auto;
-      margin-right: auto;
+      line-height: 1;
+      margin: 0 auto;
     }
   }
 }

@@ -1,8 +1,7 @@
-.location.location__third-slab {
-  padding-top: 20px;
+.location.location__two-column {
+  display: flex;
 
-  @media (min-width: 992px) {
-    display: flex;
+  @media (min-width: 768px) {
     flex-direction: row;
     align-items: center;
 
