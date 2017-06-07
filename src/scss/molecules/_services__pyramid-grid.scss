@@ -16,9 +16,54 @@
     width: 100%;
   }
 
+  //Styling for text below image card
+  //.service-card {
+  //  display: block;
+  //  text-align: center;
+  //  &__image-link {
+  //    width: 100%;
+  //    display: block;
+  //    @media (min-width: 992px) {
+  //      img { }
+  //    }
+  //    @media (min-width: 1200px) {
+  //      img { }
+  //    }
+  //  }
+  //
+  //  &__title {
+  //    display: block;
+  //    color: #000000;
+  //    margin-bottom: 5px;
+  //    padding-top: 15px;
+  //    @include font-size(23px, 18px, 21px, 20px, 19px);
+  //  }
+  //  &__learn-more {
+  //    display: block;
+  //    color: #000000;
+  //    line-height: 1;
+  //    text-decoration: underline;
+  //    @include font-size(18px,
+  //            14px,
+  //            17px,
+  //            15px,
+  //            14px);
+  //  }
+  //  &__copy {
+  //    padding-bottom: 30px;
+  //  }
+  //  &--cosmetic {
+  //    @media (max-width: 992px) {
+  //      clear: both;
+  //    }
+  //  }
+  //}
+
+  //Styling for title over bottom of card
   .service-card {
     display: block;
     text-align: center;
+    position: relative;
     &__image-link {
       width: 100%;
       display: block;
@@ -32,14 +77,15 @@
 
     &__title {
       display: block;
-      color: #000000;
-      margin-bottom: 5px;
-      padding-top: 15px;
+      color: #ffffff;
+      @include link-color(#ffffff);
+      margin-bottom: 0;
       @include font-size(23px, 18px, 21px, 20px, 19px);
     }
     &__learn-more {
       display: block;
-      color: #000000;
+      color: #ffffff;
+      @include link-color(#ffffff);
       line-height: 1;
       text-decoration: underline;
       @include font-size(18px,
@@ -48,14 +94,29 @@
               15px,
               14px);
     }
+
     &__copy {
-      padding-bottom: 30px;
-    }
-    &--cosmetic {
-      @media (max-width: 992px) {
-        clear: both;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      padding: 15px 20px;
+      bottom: 0;
+      width: 100%;
+      color: #ffffff;
+      text-decoration: underline;
+      img {
+        width: 30px;
+        height: 32px;
       }
     }
+      &:nth-child(2n) .service-card__copy {
+        background-color: rgba(28, 28, 96, 0.75);
+      }
+      &:nth-child(2n - 1) .service-card__copy {
+        background-color: rgba(0, 94, 121, 0.75);
+      }
   }
 
   @media screen and (min-width: 768px) {
@@ -64,7 +125,7 @@
         @include hover-plus();
       }
       .service-card__title {
-        color: #000000;
+        color: #ffffff;
         text-decoration: underline;
       }
     }
