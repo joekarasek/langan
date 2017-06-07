@@ -1,0 +1,26 @@
+.tour {
+  background-color: #1C1C60;
+  color: #ffffff;
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  .heading {
+    &__title {
+      color: #ffffff;
+      margin-bottom: 0;
+    }
+    &__copy {
+      line-height: 1.5;
+    }
+  }
+
+  &__video-wrapper {
+    padding: 30px 15px;
+    @media (min-width: 768px) {
+      padding: 30px 45px;
+    }
+    @media (min-width: 768px) {
+      padding: 45px 60px;
+    }
+  }
+}
