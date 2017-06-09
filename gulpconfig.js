@@ -98,6 +98,7 @@ module.exports = {
     enabled: true,
     sources: [
         'src/assets/**/*.*',
+        'src/**/*.pdf',
     ],
     dest: 'build/assets/',
   }
