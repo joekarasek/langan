@@ -10,9 +10,10 @@
   background-image: url('/assets/insurance-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
 
   @media (max-width: $width-sm - 1) {
+    background-position: top center;
     background-color: $c-mobile-bg;
     background-image: none;
 
@@ -62,11 +63,10 @@
     p {
       color: $c-copy;
       list-style: none;
-      font-size: 21px;
       margin-bottom: 0;
       line-height: 1.2;
 
-      @include font-size(25px, 19px, 14px, 18px, 14px);
+      @include font-size(23px, 19px, 14px, 18px, 14px);
     }
   }
 

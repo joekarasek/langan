@@ -30,6 +30,12 @@
       background-position: 20% center;
     }
 
+    @media (min-width: 1200px) {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom left;
+    }
+
     &__card {
       padding-top: 60px;
       padding-bottom: 60px;
@@ -54,6 +60,12 @@
       .slab-mobile-image {
         margin-top: -100px;
       }
+    }
+
+    @media (min-width: 1200px) {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom right;
     }
 
     &__card {
