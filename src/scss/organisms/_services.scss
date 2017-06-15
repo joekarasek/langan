@@ -25,15 +25,19 @@
 
   .implant-slab {
     @media (min-width: 768px) {
-      background-image: url('/assets/services/implant-dentistry.jpg');
-      background-size: cover;
-      background-position: 20% center;
+      .container {
+        background-image: url('/assets/services/implant-dentistry.jpg');
+        background-size: cover;
+        background-position: 20% center;
+      }
     }
 
     @media (min-width: 1200px) {
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: bottom left;
+      .container {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+      }
     }
 
     &__card {
@@ -53,9 +57,11 @@
 
   .dentures-slab {
     @media (min-width: 768px) {
-      background-image: url('/assets/services/cosmetic-dentures.jpg');
-      background-size: cover;
-      background-position: right center;
+      .container {
+        background-image: url('/assets/services/cosmetic-dentures.jpg');
+        background-size: cover;
+        background-position: right center;
+      }
 
       .slab-mobile-image {
         margin-top: -100px;
@@ -63,9 +69,11 @@
     }
 
     @media (min-width: 1200px) {
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: bottom right;
+      .container {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+      }
     }
 
     &__card {
